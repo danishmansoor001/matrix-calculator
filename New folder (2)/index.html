@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./MatrixCalculator.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Matrix Calculator</h1>
+        <!-- <h2>Created By Abdullah</h2> -->
+        <input type="number" id="matrixSize"  min="1" />
+        <button onclick="mc.createMatrices()">Create Matrices</button>
+
+        <div id="matrices"></div>
+        <div id="operations">
+            <input class="operation" type="button" value="A + B" onclick="mc.addMatrix()"/>
+            <input class="operation" type="button" value="A - B" onclick="mc.subtractMatrix()"/>
+            <input class="operation" type="button" value="Clear" onclick="mc.clearMatrices()"/>
+        </div>
+
+        <h2>Result Matrix</h2>
+        <div id="resultMatrix" class="matrix"></div>
+    </div>
+
+    <!-- <textarea wrap="soft" rows="10" cols="30" id="console" disabled></textarea> -->
+</body>
+</html>
